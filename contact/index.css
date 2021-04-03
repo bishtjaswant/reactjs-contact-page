@@ -1,0 +1,59 @@
+.container {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3ecec;
+
+  
+  height: 100vh; 
+  width: 100%; 
+}
+
+.wrapper {
+  border-radius: 4px;
+  background: linear-gradient(315deg, #ffffff, #ffffff);
+  box-shadow: -8px -8px 16px #ededed, 8px 8px 16px #ffffff;
+
+  height: 80vh;
+  width: 90%;
+
+  display: flex;
+  align-items: center;
+
+}
+
+.input-field label{
+    color: #181616;
+    font-weight: 500;
+}
+
+.input-field input::placeholder{
+    color:#afaeae;
+}
+
+	 
+
+/* label focus color */
+.input-field input[type=text]:focus + label, input[type=number]:focus + label {
+    color: #3e2af5 !important;
+}
+/* label underline focus color */
+  .input-field input[type=text]:focus,input[type=number]:focus {
+    border-bottom: 1px solid #3e2af5 !important;
+    box-shadow: 0 1px 0 0 #000 !important;
+  }
+
+  .caption{
+      font-size: 14px;
+      text-transform: capitalize;
+      font-weight: 700;
+      color: #181616;
+  }
+
+   
+  [type="checkbox"]+span:not(.lever):before, [type="checkbox"]:not(.filled-in)+span:not(.lever):after {
+    background-color: #2724e0 !important;
+    border: none;
+    border-radius: 40px;
+}
